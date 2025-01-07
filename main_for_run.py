@@ -29,7 +29,7 @@ def test(model, input_image, device):
     return output_image
 
 def main():
-    model_path = './model/UNet_195.pt'
+    model_path = './Model/UNet_195.pt'
     input_tiff_path = './experimental_data/input.tif'
     output_tiff_path = './Output/denoise_result.tif'
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
